@@ -75,7 +75,6 @@ p {
       grid-column-start: 1;
   -ms-grid-column-span: 4;
   grid-column-end: span 4;
-  margin-bottom: 5mm;
 }
 
 .filler {
@@ -129,7 +128,6 @@ p {
 
 .testo {
   font-weight: lighter;
-  margin-bottom: 4mm;
 }
 
 .content {
