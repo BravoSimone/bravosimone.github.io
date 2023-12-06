@@ -1,0 +1,28 @@
+---
+pageable: true
+per_page: 10
+---
+<h1> Just an annoying brain dump </h1>
+
+<% page_articles.each do |article| %>
+  <article>
+    <h3 class="titolo-articolo"> <%= link_to article.title, article.url%> </h3>
+    <p class="data-articolo"> - <%= article.date.strftime('%e %b %y') %> </p>
+    <p class="descrizione-articolo"><%= article.summary %></p>
+    <%= link_to 'Read more', article.url%>
+  </article>
+<% end %>
+
+<% if paginate && num_pages > 1 %>
+  <p>Page <%= page_number %> of <%= num_pages %></p>
+
+  <% if prev_page %>
+    <p><%= link_to 'Previous page', prev_page %></p>
+  <% end %>
+<% end %>
+
+<% if paginate %>
+  <% if next_page %>
+    <p><%= link_to 'Next page', next_page %></p>
+  <% end %>
+<% end %>
