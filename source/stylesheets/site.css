@@ -1,6 +1,6 @@
 @font-face {
-  font-family: arimo;
-  src: url(fonts/arimo.ttf);
+  font-family: lekton;
+  src: url(fonts/lekton.ttf);
 }
 
 :root {
@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: arimo;
+  font-family: lekton;
 }
 
 h1 {
@@ -37,6 +37,12 @@ p {
 a {
   color: var(--red);
   text-decoration: none;
+}
+
+.page {
+  display: flex;
+  width: 210mm;
+  margin: 0 auto;
 }
 
 .grid-container {
@@ -76,6 +82,9 @@ a {
 
 .foto {
   width: 150px;
+  border-radius: 30%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
 }
 
 .titolo {

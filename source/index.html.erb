@@ -1,25 +1,27 @@
-<div class="grid-container">
-  <div></div>
-  <div class="container-foto">
-    <%= image_tag 'foto_cv.png', class: 'foto' %>
-  </div>
-  <div class="container-titolo">
-    <h1> Welcome </h1>
-  </div>
-  <div class="separatore"></div>
-  <div class="container-content">
-    <h3 class="intro"> Hi I'm Simone, a ruby web developer with more hobbies than time! </h3>
-    <h3 class="intro"> Here you can find my <%= link_to 'CV', '/me' %>, and <%= link_to 'Blog', '/blog' %> </h3>
-  </div>
-  <div class="container-content">
-    <h2> Latest posts: </h2>
-    <% blog.articles[0...5].each do |article| %>
-      <article>
-        <h3 class="titolo-articolo"> <%= link_to article.title, article.url%> </h3>
-        <p class="data-articolo"> - <%= article.date.strftime('%e %b %y') %> </p>
-        <p class="descrizione-articolo"><%= article.summary %></p>
-        <%= link_to 'Read more', article.url%>
-      </article>
-    <% end %>
+<div class="page">
+  <div class="grid-container">
+    <div></div>
+    <div class="container-foto">
+      <%= image_tag 'foto_cv.png', class: 'foto' %>
+    </div>
+    <div class="container-titolo">
+      <h1> Welcome </h1>
+    </div>
+    <div class="separatore"></div>
+    <div class="container-content">
+      <h3 class="intro"> Hi I'm Simone, a ruby web developer with more hobbies than time! </h3>
+      <h3 class="intro"> Here you can find my <%= link_to 'CV', '/me' %>, and <%= link_to 'Blog', '/blog' %> </h3>
+    </div>
+    <div class="container-content">
+      <h2> Latest posts: </h2>
+      <% blog.articles[0...5].each do |article| %>
+        <article>
+          <h3 class="titolo-articolo"> <%= link_to article.title, article.url%> </h3>
+          <p class="data-articolo"> - <%= article.date.strftime('%e %b %y') %> </p>
+          <p class="descrizione-articolo"><%= article.summary %></p>
+          <%= link_to 'Read more', article.url%>
+        </article>
+      <% end %>
+    </div>
   </div>
 </div>

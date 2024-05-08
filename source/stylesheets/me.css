@@ -1,6 +1,6 @@
 @font-face {
-  font-family: arimo;
-  src: url(fonts/arimo.ttf);
+  font-family: lekton;
+  src: url(fonts/lekton.ttf);
 }
 
 :root {
@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: arimo;
+  font-family: lekton;
 }
 
 h1 {
@@ -39,17 +39,15 @@ p {
   margin: 1mm;
 }
 
-.a4 {
+.page {
+  display: flex;
   width: 210mm;
-  height: 297mm;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: 31% 23% 23% 23%;
-  border: 1mm solid var(--red);
   padding: 4mm;
   box-sizing: border-box;
   height: 100%;
@@ -58,7 +56,7 @@ p {
 .content-grid-container {
   display: grid;
   grid-template-columns: 30% 70%;
-  margin: 0 10mm 10mm;
+  margin-left: 5mm;
 }
 
 .separatore {
@@ -99,10 +97,11 @@ p {
 
 .data {
   font-weight: lighter;
+  font-size: 16px;
   color: var(--grey);
 }
 
-.current {
+.red {
   color: var(--red)
 }
 
@@ -120,8 +119,11 @@ p {
 }
 
 .foto {
-  width: 100%;
+  width: 85%;
   margin-bottom: 4mm;
+  border-radius: 30%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
 }
 
 .titolo {
