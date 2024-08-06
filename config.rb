@@ -25,6 +25,7 @@ set :fonts_dir, 'fonts'
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
+page "/me", layout: false
 
 # configure :build do
 #   activate :minify_css
