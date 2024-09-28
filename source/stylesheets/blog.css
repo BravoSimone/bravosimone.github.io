@@ -1,0 +1,62 @@
+@font-face {
+  font-family: lekton;
+  src: url(fonts/lekton.ttf);
+}
+
+:root {
+  --red: #CC342D;
+  --grey: #b9b9b9;
+  --dark-grey: #666666;
+}
+
+body {
+  font-family: lekton;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 100;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 100;
+  text-align: center;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: 100;
+}
+
+p {
+  font-size: 22px;
+  font-weight: 100;
+  margin-top: 0;
+}
+
+a {
+  color: var(--red);
+  text-decoration: none;
+}
+
+.post-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.post-column {
+  max-width: 600px
+}
+
+.post-column img {
+  width: 100%
+}
+
+.titolo {
+  text-align: center;
+}

@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title><%= current_article.title %></title>
+    <%= favicon_tag 'images/favicon.ico' %>
+    <%= stylesheet_link_tag "blog" %>
+    <%= javascript_include_tag "blog" %>
+  </head>
+  <body>
+    <h1 class="titolo"><%= current_article.title %></h1>
+    <div class="post-container">
+      <div class="post-column"><%= yield %></div>
+      <div class="post-column">
+        <% current_article.metadata[:page][:pictures_number].times do |number| %>
+          <img src=<%= "/#{current_path.split(".").first}/camera-pictures/#{number}.jpg" %>>
+        <% end %>
+      </div>
+    </div>
+  </body>
+</html>
