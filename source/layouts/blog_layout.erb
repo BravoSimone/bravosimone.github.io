@@ -10,7 +10,10 @@
     <%= javascript_include_tag "blog" %>
   </head>
   <body>
-    <h1 class="titolo"><%= current_article.title %></h1>
+    <div class="box-titolo">
+      <%= link_to "< Back to the list <", "/blog", class: "back-button" %>
+      <h1 class="titolo"><%= current_article.title %></h1>
+    </div>
     <div class="post-container">
       <div class="post-column"><%= yield %></div>
       <div class="post-column">

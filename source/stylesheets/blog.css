@@ -40,6 +40,11 @@ a {
   text-decoration: none;
 }
 
+.back-button {
+  display: inline-block;
+  font-size: 22px;
+}
+
 .post-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -58,5 +63,9 @@ a {
 }
 
 .titolo {
+  display: inline-block;
+}
+
+.box-titolo {
   text-align: center;
 }
