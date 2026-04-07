@@ -49,15 +49,15 @@ p {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 31% 23% 23% 23%;
-  padding: 1mm;
+  grid-template-columns: 35% 20% 20% 25%;
+  padding: 10mm;
   box-sizing: border-box;
   height: 100%;
 }
 
 .content-grid-container {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 33% 67%;
   margin-left: 5mm;
 }
 
